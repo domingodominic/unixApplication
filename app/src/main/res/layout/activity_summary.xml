@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainbg"
+    tools:context=".summaryActivity">
+
+    <ImageButton
+        android:id="@+id/back1"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:padding="10dp"
+        android:src="@drawable/backwhite" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="376dp"
+        android:layout_height="696dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="35dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/orderSummary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"
+                android:text="MY CART"
+                android:textColor="@color/statusbar"
+                android:textSize="30sp" />
+
+
+            <ListView
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="579dp"
+                android:paddingTop="40dp" />
+
+            <Button
+                android:id="@+id/clearthedatabase"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="#D72B21"
+                android:fontFamily="@font/poppins_medium"
+                android:text="CLEAR ALL ORDERS"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:cornerRadius="15dp" />
+
+            <Button
+                android:id="@+id/placeOrder"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="136dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="#D72B21"
+                android:fontFamily="@font/poppins_medium"
+                android:text="PLACE ORDER"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:cornerRadius="15dp" />
+
+            <Button
+                android:id="@+id/orderMore"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="250dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="#D72B21"
+                android:fontFamily="@font/poppins_medium"
+                android:text="ORDER   MORE"
+                android:textAlignment="center"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:cornerRadius="15dp" />
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

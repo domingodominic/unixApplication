@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".login">
+
+
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/mainbg"
+      >
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="120dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginBottom="220dp"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="LOG IN"
+        android:textColor="#000000"
+        app:cornerRadius="50dp" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="200dp"
+        android:layout_height="250dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="270dp"
+        android:layout_marginBottom="300dp"
+        app:srcCompat="@drawable/_d" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="271dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="399dp"
+        android:drawableLeft="@drawable/person"
+        android:background="@drawable/edt_bg"
+        android:ems="10"
+        android:fontFamily="@font/inter_bold"
+        android:hint="username"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:drawablePadding="5dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="300dp"
+        android:background="@drawable/edt_bg"
+        android:ems="10"
+        android:fontFamily="@font/inter_bold"
+        android:hint="Password"
+        android:inputType="textPersonName|textPassword"
+        android:paddingLeft="20dp"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="137dp"
+        android:layout_marginBottom="550dp"
+        android:text="IN"
+        android:textColor="#000000"
+        android:textSize="35sp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="187dp"
+        android:layout_marginBottom="550dp"
+        android:fontFamily="@font/inter_bold"
+        android:text="LOG"
+        android:textColor="#000000"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="159dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="135dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="135dp"
+        android:maxWidth="200dp"
+        app:srcCompat="@drawable/line_1" />
+
+</RelativeLayout>

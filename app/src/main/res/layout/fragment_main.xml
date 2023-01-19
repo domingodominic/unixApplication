@@ -1,0 +1,620 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainbg">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/prosto_one"
+            android:text="NEW ARRIVALS"
+            android:textColor="@color/statusbar" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.denzcoskun.imageslider.ImageSlider
+                android:id="@+id/slider"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="40dp"
+                app:iss_auto_cycle="true"
+                app:iss_delay="2000"
+                app:iss_error_image="@drawable/gray"
+                app:iss_period="2000"
+                app:iss_placeholder="@drawable/gray" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <!--     ito yung gap-->
+
+    <ScrollView
+        android:layout_width="408dp"
+        android:layout_height="996dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:columnCount="3"
+            android:rowCount="3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView1"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="8sp"
+                app:cardCornerRadius="8dp">
+
+                <ImageView
+
+                    android:layout_width="100dp"
+                    android:layout_height="200dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="45dp"
+                    android:src="@drawable/shirt2" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="190dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="GUESS"
+
+                    android:textColor="@color/statusbar"
+                    android:textStyle="bold" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageview"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginTop="190dp"
+                    android:text="$80"
+                    android:textColor="@color/gold"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="210dp"
+                    android:src="@drawable/star" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView2"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="8sp"
+                app:cardCornerRadius="8dp">
+
+                <ImageView
+
+                    android:layout_width="100dp"
+                    android:layout_height="200dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="45dp"
+                    android:src="@drawable/shirt5" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="190dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="GUCCI"
+
+                    android:textColor="@color/statusbar"
+                    android:textStyle="bold" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageview"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginTop="190dp"
+                    android:text="$87"
+                    android:textColor="@color/gold"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="210dp"
+                    android:src="@drawable/star" />
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView3"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="8sp"
+                app:cardCornerRadius="8dp">
+
+                <ImageView
+
+                    android:layout_width="100dp"
+                    android:layout_height="200dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="45dp"
+                    android:src="@drawable/slider4" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="190dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="XIX"
+
+                    android:textColor="@color/statusbar"
+                    android:textStyle="bold" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageview"
+                    android:layout_marginLeft="75dp"
+                    android:layout_marginTop="190dp"
+                    android:text="$100"
+                    android:textColor="@color/gold"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="210dp"
+                    android:src="@drawable/star" />
+            </androidx.cardview.widget.CardView>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView4"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="8sp"
+                app:cardCornerRadius="8dp">
+
+                <ImageView
+
+                    android:layout_width="100dp"
+                    android:layout_height="200dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="45dp"
+                    android:src="@drawable/shirt6" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="190dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="BALENCIAGA"
+                    android:textSize="11sp"
+
+                    android:textColor="@color/statusbar"
+                    android:textStyle="bold" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageview"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginTop="190dp"
+                    android:text="$87"
+                    android:textColor="@color/gold"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="210dp"
+                    android:src="@drawable/star" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView5"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="8sp"
+                app:cardCornerRadius="8dp">
+
+                <ImageView
+
+                    android:layout_width="100dp"
+                    android:layout_height="200dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="45dp"
+                    android:src="@drawable/shirt7" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="190dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="NIKE"
+
+                    android:textColor="@color/statusbar"
+                    android:textStyle="bold" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageview"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginTop="190dp"
+                    android:text="$87"
+                    android:textColor="@color/gold"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="210dp"
+                    android:src="@drawable/star" />
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView6"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="8sp"
+                app:cardCornerRadius="8dp">
+
+                <ImageView
+
+                    android:layout_width="100dp"
+                    android:layout_height="200dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="45dp"
+                    android:src="@drawable/shirt8" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="190dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="ADIDAS"
+
+                    android:textColor="@color/statusbar"
+                    android:textStyle="bold" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageview"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginTop="190dp"
+                    android:text="$50"
+                    android:textColor="@color/gold"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="210dp"
+                    android:src="@drawable/star" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView7"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="8sp"
+                app:cardCornerRadius="8dp">
+
+                <ImageView
+
+                    android:layout_width="100dp"
+                    android:layout_height="200dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="45dp"
+                    android:src="@drawable/shirt2" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="190dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="GUCCI"
+
+                    android:textColor="@color/statusbar"
+                    android:textStyle="bold" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageview"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginTop="190dp"
+                    android:text="$87"
+                    android:textColor="@color/gold"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="210dp"
+                    android:src="@drawable/star" />
+            </androidx.cardview.widget.CardView>
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView8"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="8sp"
+                app:cardCornerRadius="8dp">
+
+                <ImageView
+
+                    android:layout_width="100dp"
+                    android:layout_height="200dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="45dp"
+                    android:src="@drawable/shirt2" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="190dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="GUCCI"
+
+                    android:textColor="@color/statusbar"
+                    android:textStyle="bold" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageview"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginTop="190dp"
+                    android:text="$87"
+                    android:textColor="@color/gold"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="210dp"
+                    android:src="@drawable/star" />
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView9"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="8sp"
+                app:cardCornerRadius="8dp">
+
+                <ImageView
+
+                    android:layout_width="100dp"
+                    android:layout_height="200dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="45dp"
+                    android:src="@drawable/shirt2" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="190dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="GUCCI"
+
+                    android:textColor="@color/statusbar"
+                    android:textStyle="bold" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageview"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginTop="190dp"
+                    android:text="$87"
+                    android:textColor="@color/gold"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="210dp"
+                    android:src="@drawable/star" />
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView10"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="8sp"
+                app:cardCornerRadius="8dp">
+
+                <ImageView
+
+                    android:layout_width="100dp"
+                    android:layout_height="200dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="45dp"
+                    android:src="@drawable/shirt2" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="190dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="GUCCI"
+
+                    android:textColor="@color/statusbar"
+                    android:textStyle="bold" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageview"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginTop="190dp"
+                    android:text="$87"
+                    android:textColor="@color/gold"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="210dp"
+                    android:src="@drawable/star" />
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView11"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="8sp"
+                app:cardCornerRadius="8dp">
+
+                <ImageView
+                    android:id="@+id/imageview"
+                    android:layout_width="100dp"
+                    android:layout_height="200dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="45dp"
+                    android:src="@drawable/shirt2" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="190dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="GUCCI"
+
+                    android:textColor="@color/statusbar"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageview"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginTop="190dp"
+                    android:text="$87"
+                    android:textColor="@color/gold"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="210dp"
+                    android:src="@drawable/star" />
+            </androidx.cardview.widget.CardView>
+
+
+        </GridLayout>
+    </ScrollView>
+
+
+    <!--    I just change the code buy commenting it below and I change what I add on top of it-->
+
+    <!--    <androidx.recyclerview.widget.RecyclerView-->
+    <!--        android:id="@+id/recyclerView"-->
+    <!--        android:layout_width="413dp"-->
+    <!--        android:layout_height="488dp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent" />-->
+</androidx.constraintlayout.widget.ConstraintLayout>

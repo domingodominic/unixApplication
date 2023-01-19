@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainbg"
+    android:padding="10dp"
+    tools:context=".infoActivity">
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="30dp"
+        android:background="@null"
+
+
+        android:src="@drawable/ic_baseline_arrow_back_24" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/firstCardView"
+        android:layout_width="match_parent"
+
+        android:layout_height="320dp"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="35dp"
+        app:cardElevation="10dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp">
+
+            <ImageButton
+                android:id="@+id/nextLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="130dp"
+                android:background="@null"
+                android:src="@drawable/ic_baseline_arrow_back_ios_24" />
+
+            <ImageButton
+                android:id="@+id/nextRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="340dp"
+                android:layout_marginTop="130dp"
+                android:background="@null"
+                android:src="@drawable/ic_baseline_arrow_forward_ios_24" />
+
+            <ImageView
+                android:id="@+id/imageViewInfo"
+                android:layout_width="match_parent"
+
+                android:layout_height="220dp"
+                android:src="@drawable/shirt1" />
+
+            <TextView
+                android:id="@+id/shirtNameinInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageViewInfo"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Shirt Name"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageViewInfo"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@id/shirtNameinInfo"
+                android:fontFamily="@font/poppins_medium"
+                android:text="|  $80"
+                android:textColor="@color/gold" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="270dp"
+                android:src="@drawable/stars" />
+
+            <TextView
+                android:id="@+id/shirtPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageViewInfo"
+                android:layout_alignRight="@+id/shirtNameinInfo"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="45dp"
+                android:layout_marginRight="20dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Total: $0"
+                android:textColor="@color/gold"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/secondCardView"
+        android:layout_width="match_parent"
+
+        android:layout_height="350dp"
+        android:layout_below="@+id/firstCardView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        app:cardElevation="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/subquantity"
+                android:layout_marginTop="50dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/smallBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Small"
+                    android:textColor="@color/statusbar"
+
+                    android:textSize="10sp" />
+
+                <RadioButton
+                    android:id="@+id/mediumBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Medium"
+                    android:textColor="@color/statusbar"
+
+
+                    android:textSize="10sp" />
+
+                <RadioButton
+                    android:id="@+id/largeBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Large"
+                    android:textColor="@color/statusbar"
+                    android:textSize="10sp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="255dp"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Qty"
+
+                android:textColor="@color/statusbar"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/addquantity"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="290dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/plus" />
+
+            <TextView
+                android:id="@+id/quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/addquantity"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="0"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <ImageButton
+                android:id="@+id/subquantity"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginBottom="20dp"
+                android:layout_toRightOf="@+id/quantity"
+                android:background="@drawable/minus" />
+
+
+            <Button
+                android:id="@+id/resetBtn"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="295dp"
+                android:layout_marginTop="35dp"
+                android:backgroundTint="@color/statusbar"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Reset"
+                android:textSize="8sp" />
+
+            <CheckBox
+                android:id="@+id/addLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="20dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Dri Fit upgrade | $2"
+                android:textColor="@color/statusbar"
+                android:textSize="10sp"
+
+
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/addSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Upgrade to Glitter | $2"
+                android:textColor="@color/statusbar"
+
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/descriptioninfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="150dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="White cotton that is stylish and convenient Gucci t-shirt"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/descriptioninfo"
+                android:layout_marginLeft="10dp"
+                android:text="Note: price may vary in different sizes"
+                android:textStyle="italic" />
+
+
+            <Button
+                android:id="@+id/addtocart"
+                android:layout_width="324dp"
+                android:layout_height="58dp"
+                android:layout_below="@+id/descriptioninfo"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="30dp"
+                android:backgroundTint="#F1241B"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Add to cart"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                app:cornerRadius="50dp" />
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
+
+

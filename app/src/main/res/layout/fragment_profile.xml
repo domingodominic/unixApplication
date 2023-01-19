@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileFragment"
+    android:background="@drawable/mainbg">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:src="@drawable/profilepic"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="100dp"/>
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Radcliffe, Daniel"
+        android:fontFamily="@font/prosto_one"
+        android:layout_marginTop="240dp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="140dp"/>
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Edit profile"
+          android:layout_marginTop="270dp"
+          android:layout_marginLeft="170dp"
+          android:textColor="@color/white"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginTop="330dp"
+        android:background="@color/frameColor">
+
+        <LinearLayout
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="350dp"
+            android:layout_height="347dp"
+            android:orientation="vertical"
+            android:background="@drawable/framebg">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="INFORMATION"
+                android:textColor="@color/white"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp"/>
+            
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/white"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_baseline_location_on_24"
+                android:fontFamily="@font/poppins_medium"
+                android:padding="15dp"
+                android:text="Address: 254 Street 4, Bataan"
+                android:textColor="@color/white" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/ic_baseline_phone_android_24"
+                android:fontFamily="@font/poppins_medium"
+                android:padding="15dp"
+                android:text="Mobile: 0912675821"
+                android:textColor="@color/white" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/ic_baseline_email_24"
+                android:fontFamily="@font/poppins_medium"
+                android:padding="15dp"
+                android:text="EMAIL: RadcliffeD@gmail.com"
+                android:textColor="@color/white" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textAlignment="center"
+                android:drawableBottom="@drawable/fb"
+
+                android:fontFamily="@font/poppins_medium"
+                android:padding="15dp"
+                android:text="Social media accounts"
+                android:textColor="@color/white" />
+                
+             
+
+
+
+
+        </LinearLayout>
+    </FrameLayout>
+
+
+</FrameLayout>

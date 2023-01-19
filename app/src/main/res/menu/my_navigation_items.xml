@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+    <item android:id="@+id/nav_home"
+          android:icon="@drawable/ic_baseline_home_24"
+          android:title="home" />
+    <item android:id="@+id/nav_profle"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:title="profile"/>
+        <item android:id="@+id/nav_trending"
+            android:icon="@drawable/ic_baseline_whatshot_24"
+            android:title="Trending"/>
+    <item android:id="@+id/nav_cart"
+        android:icon="@drawable/ic_baseline_shopping_cart_24"
+        android:title="cart"/>
+    <item android:id="@+id/nav_like"
+        android:icon="@drawable/ic_baseline_thumb_up_alt_24"
+        android:title="You may like"/>
+    </group>
+
+   <item android:title="settings">
+       <menu>
+           <group android:checkableBehavior="single">
+           <item android:id="@+id/nav_notif"
+                 android:icon="@drawable/ic_baseline_notifications_24"
+               android:title="Notification"/>
+           <item android:id="@+id/nav_logout"
+               android:icon="@drawable/ic_baseline_logout_24"
+               android:title="log out"/>
+           </group>
+       </menu>
+
+
+   </item>
+
+
+</menu>
